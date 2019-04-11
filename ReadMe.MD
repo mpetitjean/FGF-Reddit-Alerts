@@ -40,7 +40,7 @@ You can now jump to step 2 !
 
 #### Via browser
 
-Go to the [Google App Scripts homepage](https://script.google.com/home), click the **+** icon to create a new project, name it, and copy the content of this repository to the newly create `Code.gs` file.
+Go to the [Google App Scripts homepage](https://script.google.com/home), click the **+** icon to create a new project, name it, and copy the content of the script in this repository to the newly created `Code.gs` file.
 
 ### Step 2 - Variables and manual run
 
