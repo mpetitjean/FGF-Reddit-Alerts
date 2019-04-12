@@ -14,7 +14,7 @@ function main()
   var known_posts = sheet.getDataRange().getDisplayValues();
   var merged = [].concat.apply([], known_posts);
   var new_posts = []
-  
+
   // Loop across all posts
   for(var post = 0, size = posts.length; post < size ; post++)
   {
@@ -37,8 +37,8 @@ function main()
   // Send mail if one or more new trendy posts detected
   if(new_posts.length > 0)
   {
-    var mail_message = "<p> There is new hot stuff on FGF ! The following post(s) got more than " + SCORE_THRESHOLD.toString() + " upvotes: </p>";
-    
+    var mail_message = "<p> There is new hot stuff on FGF! The following post(s) got more than " + SCORE_THRESHOLD.toString() + " upvotes: </p>";
+
     for(var post = 0, size = new_posts.length; post < size ; post++)
     {
       mail_message = mail_message + "<p><a href='" + posts[new_posts[post]]['data']['url'] + "'>" + posts[new_posts[post]]['data']['title'] + "</a></p>"; 
@@ -55,7 +55,7 @@ function main()
 function getLogSheet()
 {
   var it = DriveApp.getFilesByName(FILENAME);
-  
+
   if( !it.hasNext())
   {
     var ss = SpreadsheetApp.create(FILENAME);
